@@ -8,8 +8,8 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const assert_1 = __importDefault(require("assert"));
 dotenv_1.default.config();
 const { PORT, HOST, HOST_URL, API_KEY, AUTH_DOMAIN, PROJECT_ID, STORAGE_BUCKET, MESSAGING_SENDER_ID, APP_ID, } = process.env;
-(0, assert_1.default)(PORT, 'PORT is required');
-(0, assert_1.default)(HOST, 'HOST is required');
+// (0, assert_1.default)(PORT, 'PORT is required');
+// (0, assert_1.default)(HOST, 'HOST is required');
 exports.config = {
     port: PORT,
     host: HOST,
